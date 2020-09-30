@@ -1,0 +1,19 @@
+{
+  "name": "epgstation-tweet-tool",
+  "version": "1.0.0",
+  "description": "EPGStationの通知をツイートするためのツール",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnao305/epgstation-tweet-tool.git"
+  },
+  "author": "mnao305 <naomasa305@gmail.com> (https://mnao305.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mnao305/epgstation-tweet-tool/issues"
+  },
+  "homepage": "https://github.com/mnao305/epgstation-tweet-tool#readme"
+}
