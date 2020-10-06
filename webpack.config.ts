@@ -1,4 +1,5 @@
 import { ConfigurationFactory } from 'webpack'
+import CopyWebpackPlugin from 'copy-webpack-plugin'
 
 const config: ConfigurationFactory = () => {
   return {
@@ -16,7 +17,14 @@ const config: ConfigurationFactory = () => {
     },
     resolve: {
       extensions: ['.ts', '.js']
-    }
+    },
+    plugins: [
+      new CopyWebpackPlugin({
+        patterns: [
+          { from: 'src/config.json', to: 'config.json' }
+        ]
+      })
+    ]
   }
 }
 
