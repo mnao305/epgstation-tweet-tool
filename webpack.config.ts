@@ -14,7 +14,7 @@ const config: ConfigurationFactory = () => {
     },
     resolve: {
       extensions: ['.ts', '.js']
-    },
+    }
   }
 }
 
