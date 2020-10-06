@@ -3,6 +3,8 @@ import { ConfigurationFactory } from 'webpack'
 const config: ConfigurationFactory = () => {
   return {
     entry: './src/index.ts',
+    target: 'node',
+    mode: 'production',
     module: {
       rules: [
         {
