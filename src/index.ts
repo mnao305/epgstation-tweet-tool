@@ -25,8 +25,6 @@ interface Config {
 
 const CONFIG = JSON.parse(readFileSync(join(__dirname, './config.json'), 'utf8')) as Config
 
-console.log(CONFIG)
-
 const getProgramInfo = (): Program => {
   return {
     channelName: process.env.CHANNELNAME ?? '',
@@ -65,7 +63,6 @@ const createTweetText = (mode: Arguments, programInfo: Program): string => {
 }
 
 const tweet = (tweetText: string): void => {
-  console.log(tweetText)
   const client = new Twitter(CONFIG.twitter_token)
   client.post('statuses/update', {
     status: tweetText
