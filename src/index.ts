@@ -1,5 +1,6 @@
 import Twitter from 'twit'
 import fs from 'fs'
+import { join } from 'path'
 
 type Arguments = 'reserve' | 'start' | 'end' | 'recfailed'
 
@@ -22,7 +23,7 @@ interface Config {
   twitter_token: TwitterToken
 }
 
-const CONFIG = JSON.parse(fs.readFileSync('./config.json', 'utf8')) as Config
+const CONFIG = JSON.parse(fs.readFileSync(join(__dirname, './config.json'), 'utf8')) as Config
 
 console.log(CONFIG)
 
