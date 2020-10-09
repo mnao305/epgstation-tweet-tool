@@ -30,8 +30,8 @@ const getProgramInfo = (): Program => {
     channelName: process.env.CHANNELNAME ?? '',
     title: process.env.NAME as string,
     description: process.env.DESCRIPTION ?? '',
-    startAt: new Date(Number(process.env.STARTAT) * 1000),
-    endAt: new Date(Number(process.env.ENDAT) * 1000)
+    startAt: new Date(Number(process.env.STARTAT)),
+    endAt: new Date(Number(process.env.ENDAT))
   }
 }
 
