@@ -5,6 +5,10 @@ const config: ConfigurationFactory = () => {
   return {
     entry: './src/index.ts',
     target: 'node',
+    node: {
+      __dirname: false,
+      __filename: false
+    },
     mode: 'production',
     module: {
       rules: [
