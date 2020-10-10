@@ -36,7 +36,7 @@ const getProgramInfo = (): Program => {
 }
 
 const formatDate = (date: Date): string => {
-  return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()} ${date.getHours()}:${date.getMinutes()}`
+  return `${date.getFullYear()}/${('00' + String(date.getMonth() + 1)).slice(-2)}/${('00' + String(date.getDate())).slice(-2)} ${('00' + String(date.getHours())).slice(-2)}:${('00' + String(date.getMinutes())).slice(-2)}`
 }
 
 const createTweetText = (mode: Arguments, programInfo: Program): string => {
