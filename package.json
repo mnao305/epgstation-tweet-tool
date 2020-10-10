@@ -1,6 +1,6 @@
 {
   "name": "epgstation-tweet-tool",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "EPGStationの通知をツイートするためのツール",
   "main": "index.js",
   "scripts": {
