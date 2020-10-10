@@ -4,6 +4,10 @@ EPGStationの通知をツイートするためのツールです。
 
 ## サンプル
 
+![image](https://user-images.githubusercontent.com/32170530/95661603-968a8a00-0b6b-11eb-89a1-ccf8473f8b8c.png)
+
+> <https://twitter.com/mnao_1001/status/1314943779737010184>
+
 ## 使い方
 
 ### 導入
