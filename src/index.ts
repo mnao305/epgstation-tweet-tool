@@ -45,7 +45,7 @@ const createTweetText = (mode: Arguments, programInfo: Program): string => {
   switch (mode) {
     case 'reserve':
       // 録画予約時
-      text += `【予約追加】 ${programInfo.channelName} ${dateString}\n${programInfo.title}\n${programInfo.description}`
+      text += `【予約追加】 ${programInfo.channelName} ${dateString}\n${programInfo.title}`
       break
     case 'start':
       // 録画開始時
