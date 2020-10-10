@@ -35,9 +35,13 @@ const getProgramInfo = (): Program => {
   }
 }
 
+const formatDate = (date: Date): string => {
+  return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()} ${date.getHours()}:${date.getMinutes()}`
+}
+
 const createTweetText = (mode: Arguments, programInfo: Program): string => {
   let text = ''
-  const dateString = `${programInfo.startAt.toLocaleString('ja-JP', { hour12: false })} 〜 ${programInfo.endAt.toLocaleString('ja-JP', { hour12: false })}`
+  const dateString = `${formatDate(programInfo.startAt)} 〜 ${formatDate(programInfo.endAt)}`
   switch (mode) {
     case 'reserve':
       // 録画予約時
